@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  font-weight: 400;
+}
+form.auth {
+  width: 230px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .auth-header {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    .logo {
+      width: 31px;
+      height: 39px;
+      background: url("../img/logo.png") no-repeat;
+      margin: {     
+        right: 6px;
+      }
+    }
+  }
+  svg {
+    fill: rgba(36, 117, 243, 0.9);
+  }
+  input[type="text"],
+  input[type="password"] {
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-indent: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  input.invalid {
+    border: 1px solid #ea4692;
+  }
+}
+form.auth > button {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: rgba(36, 117, 243, 0.9);
+  &:hover{
+    cursor: pointer;
+    background-color: #84e4f1;
+    color: #fff;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+::-webkit-input-placeholder {color:#b3b0b0;}
+::-moz-placeholder          {color:#b3b0b0;}
+:-ms-input-placeholder      {color:#b3b0b0;}
+
+.error-block{
+  height: 20px;
+  padding: {
+    top: 5px;
+    bottom: 5px;
+  }
+  color: #ff0000;
+}
+.success-message{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  svg {
+    fill: #42d242;
+  }
+}
+@keyframes logining {
+    from { transform: rotate(0deg); }   
+    95% { transform: rotate(360deg); }
+}
+svg.auth-spin  {
+  animation: logining 1s infinite linear;
+}
