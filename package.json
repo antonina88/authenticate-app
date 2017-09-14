@@ -1,7 +1,7 @@
 {
-  "name": "react-weather-app",
+  "name": "authenticate-app",
   "version": "1.0.0",
-  "description": "react-weather-app",
+  "description": "authenticate-app",
   "main": "index.js",
   "scripts": {
     "test": "",
@@ -12,7 +12,7 @@
     "lint": "./node_modules/.bin/eslint ./app/*.js"
   },
   "keywords": [
-    "react-weather-app",
+    "authenticate-app",
     "es6",
     "react"
   ],
